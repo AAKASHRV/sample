@@ -13,24 +13,30 @@
 }
 
 .navbar{
-    width: 88px;
-    margin: auto;
-    padding: 15px 0;
     display: flex;
-    align-items: right;
-    justify-content:left;
-
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    animation: header 2s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translatey(-100%);
+    }
 }
 .navbar ul li{
-    list-style: none;
-    display: inline-block;
+    list-style-type:decimal;
     margin: 0 15px;
-
-
+    display: inline-block;
+    padding: 20px;
 }
 .navbar ul li a{
     text-decoration: none;
     color: white;
     font-size: 15px;
     font-weight: 600;
+}
+
+.navbar ul li a:hover{
+    color: red;
 }
